@@ -2,7 +2,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import About from '../pages/About/About';
-import Contact from '../pages/Contact/Contact.JSX';
+import Contact from '../pages/Contact/Contact';
 import News from '../pages/New/News';
 import Register from '../pages/Signup/Register';
 import UserProfile from '../pages/UserInfo/UserProfile';
