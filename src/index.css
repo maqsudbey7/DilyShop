@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+.skidka-15 {
+  transform: rotate(40deg);
+}
+
+.skidka-5 {
+  transform: rotate(10deg);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.delay-100 {
+  animation-delay: 0.3s;
+}
+
+.delay-200 {
+  animation-delay: 0.6s;
+}
+
+@keyframes truckMove {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-truck {
+  animation: truckMove 1s ease-in-out infinite;
+}
+
+
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-slide {
+  animation: slideDown 0.1s ease forwards;
+}
+
+.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.welcome-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #cde6f5, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.welcome-text {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #0a3d62;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.cloud {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: -30px 0 0 -10px #fff, 30px 0 0 -10px #fff;
+  animation: floatClouds 30s linear infinite;
+}
+
+.cloud1 {
+  width: 120px;
+  height: 60px;
+  top: 20%;
+  left: -200px;
+  animation-delay: 0s;
+}
+
+.cloud2 {
+  width: 180px;
+  height: 80px;
+  top: 40%;
+  left: -300px;
+  animation-delay: 5;
+}
+
+.cloud3 {
+  width: 140px;
+  height: 70px;
+  top: 60%;
+  left: -250px;
+  animation-delay: 10;
+}
+
+@keyframes floatClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(150vw);
+  }
+}
+
+/* Skrollning umumiy o'lchami */
+::-webkit-scrollbar {
+  width: 5px; /* Vertikal scroll */
+  height: 20px; /* Gorizontal scroll */
+}
+
+/* Skroll yo'li (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Skrollning o'zi */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Hover qilganda */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
