@@ -19,10 +19,10 @@ import Phones from '../pages/PhonePage/Phones'
 import Wishlist from '../pages/Wishlist/Wishlist';
 import AllGadgets from '../pages/AllGatgets/AllGadgets';
 
-const AppRoutes = ({changeLang}) => {
+const AppRoutes = ({ changeLang }) => {
   return (
     <Routes>
-      <Route path="/" element={<Layout  changeLang={changeLang} />}>
+      <Route path="/" element={<Layout changeLang={changeLang} />}>
         <Route index element={<Home />} />
         <Route path="phones" element={<Phones />} />
         <Route path="phones/:id" element={<PhoneDetail />} />
